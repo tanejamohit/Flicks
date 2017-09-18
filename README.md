@@ -27,10 +27,10 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
+### Video Walkthrough for all user stories
 <img src='http://i.imgur.com/oKVXjx0.gif' title='Walkthrough for all User Stories' width='200' alt='Walkthrough for all User Stories' />
 
+### Video Walkthrough for Bad Network Connection
 <img src='http://i.imgur.com/8WwF18w.gif' title='Walkthrough for Bad Network Connection' width='200' alt='Walkthrough for Bad Network Connection' />
 
 ## License
