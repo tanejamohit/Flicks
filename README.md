@@ -29,11 +29,13 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/oKVXjx0.gif' title='Walkthrough for all User Stories' width='200' alt='Walkthrough for all User Stories' />
+
+<img src='http://i.imgur.com/8WwF18w.gif' title='Walkthrough for Bad Network Connection' width='200' alt='Walkthrough for Bad Network Connection' />
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2017] [Mohit Taneja]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
