@@ -14,7 +14,6 @@ class MovieDetailViewController: UIViewController {
   @IBOutlet weak var movieTitleLabel: UILabel!
   @IBOutlet weak var movieDescriptionLabel: UILabel!
   @IBOutlet weak var scrollView: UIScrollView!
-  
   @IBOutlet weak var infoView: UIView!
   var movie: NSDictionary!
   
@@ -24,14 +23,18 @@ class MovieDetailViewController: UIViewController {
     scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: infoView.frame.origin.y + infoView.frame.height)
     
     movieTitleLabel.text = movie["title"] as?  String
-    
     movieDescriptionLabel.text = movie["overview"] as?  String
     movieDescriptionLabel.sizeToFit()
     
     if let posterPath = movie["poster_path"] as? String {
-      let baseURL = "http://image.tmdb.org/t/p/w500"
-      let imageURL = URL(string: baseURL + posterPath)
-      backgroundImageView.setImageWith(imageURL!)
+      let baseURLLowRes = "http://image.tmdb.org/t/p/w92"
+      let imageURLLowRes = URL(string: baseURLLowRes + posterPath)
+
+      let baseURLHighRes = "http://image.tmdb.org/t/p/original"
+      let imageURLHighRes = URL(string: baseURLHighRes + posterPath)
+      
+      backgroundImageView.setImageWithAnimation(imageURLLowRes!)
+      backgroundImageView.setImageWith(imageURLHighRes!)
     }
   }
   
